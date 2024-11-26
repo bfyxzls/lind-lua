@@ -49,3 +49,16 @@ print(isPathMatched(request_uri91, config_paths91)) -- true
 local request_uri92 = "/order-payment/callback/success"
 local config_paths92 = { "/order-payment/**" }
 print(isPathMatched(request_uri92, config_paths92)) -- true
+
+local request_uri93 = "/courtchat-api/v1/court/demoSelect"
+local config_paths93 = { "/courtchat-api/v1/court/demoSelect" }
+print(isPathMatched(request_uri93, config_paths93)) -- true
+
+-- 原始 URL
+local original_url = "https://testcas.pkulaw.com/auth/realms/fabao/protocol/openid-connect/token"
+
+-- 使用 string.gsub 函数进行替换
+local new_url = original_url:gsub("/token", "/introspect")
+
+-- 输出新的 URL
+print(new_url)

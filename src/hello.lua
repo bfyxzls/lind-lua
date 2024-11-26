@@ -92,3 +92,26 @@ end
 local int_value = 16909060
 local result_str = str_int32(int_value)
 print(result_str)
+
+local ipAddr = "192.168.0.1-192.168.0.255-123"
+local result = {}
+
+for part in string.gmatch(ipAddr, "[^%-]+") do
+    table.insert(result, part)
+end
+
+-- 输出结果
+for i, v in ipairs(result) do
+    print(v)
+end
+print(result[1], result[2], result[3])
+
+local ipAddr = "192.168.0.1-192.168.0.255-123"
+
+-- 使用 pattern 匹配并拆分字符串
+local startIp, endIp, aid = ipAddr:match("([^%-]+)%-(.+)%-(.+)")
+
+-- 输出结果
+print("Start IP: ", startIp)
+print("End IP: ", endIp)
+print("AID: ", aid)
