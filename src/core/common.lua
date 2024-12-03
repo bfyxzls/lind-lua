@@ -19,6 +19,10 @@ function _M.divide(a, b)
     return a / b
 end
 
+function _M.hello()
+    print("hello world!")
+end
+
 
 --local status, result = pcall(divide, 10, 0)
 --
