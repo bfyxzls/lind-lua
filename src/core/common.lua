@@ -12,7 +12,7 @@ function _M:new(name)
 end
 
 function _M.divide(a, b)
-    print("name=".._M.name)
+   print("name=".._M.name)
     if b == 0 then
         error("除数不能为0")
     end

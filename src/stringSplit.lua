@@ -1,4 +1,6 @@
 -- 字符串分割
+-- 作者：lind.zhang
+
 local ipAddr = "192.168.0.1_192.168.0.255_123"
 local result = {}
 

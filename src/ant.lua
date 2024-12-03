@@ -1,3 +1,6 @@
+-- ant匹配算法
+-- 作者：lind.zhang
+
 local function antPathMatch(request_uri, pattern)
     -- 将 Ant 风格的模式转换为 Lua 的模式
     request_uri = string.gsub(request_uri, "%-", "")      -- 解决路径中-引起的问题

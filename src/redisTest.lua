@@ -1,3 +1,6 @@
+-- redis操作
+-- 作者：lind.zhang
+
 local redis = require("resty.redis")
 
 local function delete_keys_by_pattern(redis_host, redis_port, redis_password, pattern)
