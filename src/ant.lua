@@ -55,7 +55,7 @@ local config_paths93 = { "/courtchat-api/v1/court/demoSelect" }
 print(isPathMatched(request_uri93, config_paths93)) -- true
 
 -- 原始 URL
-local original_url = "https://testcas.pkulaw.com/auth/realms/fabao/protocol/openid-connect/token"
+local original_url = "https://xx.xxx.com/auth/realms/xxx/protocol/openid-connect/token"
 
 -- 使用 string.gsub 函数进行替换
 local new_url = original_url:gsub("/token", "/introspect")
