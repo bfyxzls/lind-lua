@@ -9,6 +9,11 @@ local tostring = tostring
 local a="lind.zhang"
 print("hello world "..#a)
 
+local num=1
+if num==1 then
+    print("num is 1")
+end
+
 local welcome = [[
  hello world
  ou are good.
@@ -30,6 +35,7 @@ print(add(1,3))
 -- 传递多个参数
 function dd(...)
     local args = {...}
+    print("args size:", #args) -- #args 获取参数的个数,数组长度
     for i, v in ipairs(args) do
         print("参数", i, ":", v)
     end

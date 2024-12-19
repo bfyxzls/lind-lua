@@ -23,3 +23,8 @@ local startIp, endIp,aid =range:match("([^%-]+)%_(.+)%_(.+)")
 print("Start IP: ", startIp)
 print("End IP: ", endIp)
 print("AID: ", aid)
+
+
+local request_uri = "https://test-gateway.pkulaw.com/nologin/backend/platform-account-rel/list?platformId=a50d6cfc-30a1-418a-a038-152d8d52db06"
+local absolutePath = request_uri:match("([^?]*)")  -- 使用模式匹配提取路径部分
+print("absolutePath: ", absolutePath)
