@@ -4,7 +4,7 @@ local request_uri4 = "/order-payment/"
 local config_paths4 = { "/order-payment/**" }
 print(ant.isPathMatched(request_uri4, config_paths4)) -- true
 
-local request_uri5 = "/order-payment/sadfads"
+local request_uri5 = "/order-payment/sadfads/dudu"
 local config_paths5 = { "/order-payment/**" }
 print(ant.isPathMatched(request_uri5, config_paths5)) -- true
 
